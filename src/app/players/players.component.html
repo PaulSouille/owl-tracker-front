@@ -1,0 +1,9 @@
+<p>
+  player works!
+</p>
+<ul *ngIf="players">
+    <li *ngFor="let player of players;">
+    <img  class="player_headshot" (click)="showPlayer(player.id)" src={{player.headshot}}>
+  </li>  
+  </ul>
+
